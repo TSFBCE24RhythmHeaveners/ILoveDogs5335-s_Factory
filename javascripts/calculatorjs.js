@@ -1,7 +1,7 @@
-var number_1, number_2;
+var num1, num2;
 
 function calculator() {
-  number_1 = Number(window.prompt('Enter the first number.'));
-  number_2 = Number(window.prompt('Enter the second number.'));
-  window.alert(['Addition result: ' + String(number_1 + number_2),'. Subtraction result: ' + String(number_1 - number_2),'. Multiplication result: ' + String(number_1 * number_2),'. Division result: ' + String(number_1 / number_2),'. Exponentation result: ' + String(Math.pow(number_1, number_2)),['. Root result: ',Math.pow(number_1, 1 / number_2),'.'].join('')].join(''));
+  num1 = Number(window.prompt('Enter the first number.'));
+  num2 = Number(window.prompt('Enter the second number.'));
+  window.alert([['Addition result is ',num1 + num2,'. '].join(''),['Subtraction result is ',num1 - num2,'. '].join(''),['Multiplication result is',num1 * num2,'. '].join(''),['Division result is',num1 / num2,'. '].join(''),['Exponentation result is',Math.pow(num1, num2),'. '].join(''),['Root result is',Math.pow(num1, 1 / num2),'.'].join('')].join(''));
 }
